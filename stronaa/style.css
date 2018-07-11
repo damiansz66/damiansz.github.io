@@ -1,0 +1,102 @@
+#emperorVid {
+}
+#pauseBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #ffc107!important;
+    color: #fff;
+    cursor: pointer;
+}
+
+#pauseBtn:hover {
+    background: #ddd;
+    color: black;
+}
+#emperor-sponsorzy {
+	background-image: url("img/emperor.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+
+}
+@media screen and (max-width: 600px){
+	#emperor-sponsorzy {
+		background-size: 600px;
+		background-repeat: repeat;
+}
+
+}
+#sfort {
+	background-image: url("img/sfortnite.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+}
+#scsgo {
+	background-image: url("img/scsgo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+}
+#slol {
+	background-image: url("img/slol.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+
+
+}
+#spubg {
+	background-image: url("img/spubg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #ffc107;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.player:hover {
+	transform: scale(1.5);
+}
+.player {
+	transition: transform .2s;
+}

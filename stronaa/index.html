@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Emperor Esport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-amber w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="redirectFun()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">STRONA GŁÓWNA</a>
+    <a href="#emperor-sponsorzy" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORZY</a>
+    <a href="#emperor-sklad" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NASZE DYWIZJE</a>
+    <a href="#emperor-kontakt" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KONTAKT</a>
+	<a href="#" class="w3-bar-item w3-hide-small w3-right" style="padding-top: 12px; padding-bottom: 12px;"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+	<a href="#" class="w3-bar-item w3-hide-small w3-right" style="padding-top: 12px; padding-bottom: 12px;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+	<a href="#" class="w3-bar-item w3-hide-small w3-right" style="padding-top: 12px; padding-bottom: 12px;"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+	<a href="#" class="w3-bar-item w3-hide-small w3-right" style="padding-top: 12px; padding-bottom: 12px;"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+	<a href="#" class="w3-bar-item w3-hide-small w3-right" style="padding-top: 12px; padding-bottom: 12px;"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+	<a href="#" class="w3-bar-item w3-hide-small w3-right" style="padding-top: 12px; padding-bottom: 12px;"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</div>
+
+<div id="navEmp" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#emperor-sponsorzy" class="w3-bar-item w3-button w3-padding-large" onclick="redirectFun()">SPONSORZY</a>
+  <a href="#emperor-sklad" class="w3-bar-item w3-button w3-padding-large" onclick="redirectFun()">NASZE DYWIZJE</a>
+  <a href="#emperor-kontakt" class="w3-bar-item w3-button w3-padding-large" onclick="redirectFun()">KONTAKT</a>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <div class="w3-display-container w3-center">
+    <video autoplay muted loop id="emperorVid" style="width:100%">
+		<source src="vid/emperor.mkv" type="video/mp4">
+	</video>
+    <div class="w3-display-bottomright w3-container w3-text-white w3-padding-32 w3-hide-small">
+		<button id="pauseBtn" onclick="pauseFun()">Pauza</button>  
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" id="emperor-sponsorzy">
+    <h2 class="w3-wide">SPONSORZY</h2>
+    <p class="w3-opacity"><i>EMPEROR ESPORT</i></p>
+    <div class="w3-row w3-padding-32 w3-container">
+		<div class="w3-col m2 w3-center"><img src="img/sig.png" class="w3-round w3-margin-bottom w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+		<div class="w3-col m2 w3-center"><img src="img/topspeak.jpg" class="w3-round w3-margin-bottom w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+		<div class="w3-col m2 w3-center"><img src="img/sg.png" class="w3-round w3-margin-bottom w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+		<div class="w3-col m2 w3-center"><img src="img/syclik.png" class="w3-round w3-margin-bottom w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+		<div class="w3-col m2 w3-center"><img src="img/1s1k.png" class=" w3-margin-bottom w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%; background-color: white;"></div>
+		<div class="w3-col m2 w3-center"><img src="img/sig.png" class="w3-round w3-margin-bottom w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+    </div>
+  </div>
+
+
+  <div class="w3-black" id="emperor-sklad">
+    <div class="w3-container w3-content w3-padding-64 w3-center" style="max-width:800px">
+      <h3 class="w3-wide w3-center">NASZE DYWIZJE</h3>
+      <h1 class="w3-center">FORTNITE</h1><br>
+	  <div id="sfort" class="w3-row w3-padding-32 w3-container">
+			<div class="w3-col m2 w3-center player"><img onclick="document.getElementById('id01').style.display='block'" src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/topspeak.jpg" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sg.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/syclik.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/1s1k.png" class=" w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%; background-color: white;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+	   </div><br>
+	   <h1 class="w3-center">CS:GO</h1><br>
+	   <div id="scsgo" class="w3-row w3-padding-32 w3-container">
+			<div class="w3-col m2 w3-center player"><img onclick="document.getElementById('id01').style.display='block'" src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/topspeak.jpg" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sg.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/syclik.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/1s1k.png" class=" w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%; background-color: white;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+	   </div><br>
+	   <h1 class="w3-center">LEAGUE OF LEGENDS</h1><br>
+	   <div id="slol" class="w3-row w3-padding-32 w3-container">
+			<div class="w3-col m2 w3-center player"><img onclick="document.getElementById('id01').style.display='block'" src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/topspeak.jpg" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sg.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/syclik.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/1s1k.png" class=" w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%; background-color: white;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+	   </div><br>
+	   <h1 class="w3-center">PUBG</h1><br>
+	   <div id="spubg" class="w3-row w3-padding-32 w3-container">
+			<div class="w3-col m2 w3-center player"><img onclick="document.getElementById('id01').style.display='block'" src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/topspeak.jpg" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sg.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/syclik.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/1s1k.png" class=" w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%; background-color: white;"></div>
+			<div class="w3-col m2 w3-center"><img src="img/sig.png" class="w3-round w3-bottombar w3-topbar w3-rightbar w3-leftbar w3-border-amber" style="width: 60%;"></div>
+	   </div><br>
+
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-padding-64 w3-center" style="max-width:800px" id="emperor-kontakt">
+    <h2 class="w3-wide w3-center">KONTAKT</h2>
+	<div class="w3-container">
+		<form action="action_page.php">
+		<label for="nick">Nick</label>
+		<input type="text" id="nick" name="nick" placeholder="Nick.." required>
+		<label for="e-mail">E-Mail</label>
+		<input type="text" id="e-mail" name="e-mail" placeholder="E-mail.." required>
+		<label for="wiadomosc">Wiadomość</label>
+		<textarea id="wiadomosc" name="wiadomosc" placeholder="Napisz do nas.." required style="height:200px"></textarea>
+
+		<input type="submit" value="Wyślij">
+
+  </form>
+	
+	
+	
+	
+	
+	
+	</div>
+  </div>
+  
+
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-amber w3-text-black w3-border w3-border-black">
+  	  <a href="#" class="w3-button w3-left w3-padding-large w3-indigo"><i class="fa fa-facebook"></i></a>
+	  <a href="#" class="w3-button w3-left w3-padding-large w3-purple"><i class="fa fa-twitch"></i></a>
+	  <a href="#" class="w3-button w3-left w3-padding-large w3-black"><i class="fa fa-steam"></i></a>
+    <div class="w3-container w3-center">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+	  <img src="img/placeholder.jpg">
+      <h1>Jan "Janek" Kowalski</h1>
+      <h6>Gracz fortnite w ogole kozak super gra itd pozdrawiam</h6>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+function redirectFun() {
+    var x = document.getElementById("navEmp");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+<script>
+
+var video = document.getElementById("emperorVid");
+
+
+var btn = document.getElementById("pauseBtn");
+
+
+function pauseFun() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pauza";
+    } else {
+        video.pause();
+        btn.innerHTML = "Start";
+    }
+}
+</script>
+
+</body>
+</html>
