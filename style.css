@@ -29,7 +29,18 @@
 		background-size: 600px;
 		background-repeat: repeat;
 }
-
+	#sfort div {
+		margin-bottom: 10px;
+}
+	#slol div {
+		margin-bottom: 10px;
+}
+	#spubg div {
+		margin-bottom: 10px;
+}
+	#scsgo div {
+		margin-bottom: 10px;
+}
 }
 #sfort {
 	background-image: url("img/sfortnite.jpg");
@@ -59,6 +70,12 @@
 	max-width: 100%;
 
 
+}
+.player:hover {
+	transform: scale(1.5);
+}
+.player {
+	transition: transform .2s;
 }
 #spubg {
 	background-image: url("img/spubg.jpg");
@@ -94,9 +111,17 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-.player:hover {
-	transform: scale(1.5);
+
+@media screen and (max-width: 775px){
+	.icon {
+		display: none!important;
 }
-.player {
-	transition: transform .2s;
+}
+@media screen and (max-width: 775px){
+	.navbutton {
+		display: none!important;
+		}
+	.navmenu {
+		display: block!important;
+	}
 }
